@@ -1,2 +1,2 @@
 # HarpaLan
-Verkefni 4 og lokaveerkefni í VSH
+Verkefni 4 og lokaverkefni í VSH
