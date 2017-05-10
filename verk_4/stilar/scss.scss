@@ -27,6 +27,12 @@ body
 
 }
 
+p
+{
+	margin: 0 auto;
+	padding: 1px;
+}
+
 
 @media screen and(max-width: 960px){
 
@@ -35,7 +41,7 @@ body
 		color: $white;
 		position: fixed;
 		top:90px;
-		right:5px;
+		right:10px;
 		border: 1px solid $white;
 		width: 24px;
 		height: 24px;
@@ -45,7 +51,8 @@ body
 
 	.partOfMenu
 	{
-		visibility: hidden;
+		display: none;
+
 	}
 
 	.ddMenu:hover
@@ -59,13 +66,29 @@ body
 
 	.ddMenu:focus
 	{
+		width: 90%;
+		max-height: 99%;
+		padding: 1px;
+		border: none;
+		visibility: hidden;
+
+		.onlyThis
+		{
+			display: none;
+		}
+		
 		.partOfMenu 
 		{
+			position: absolute;
+			display: block;
+			width: 80%;
+			background-color: transparent;
+			margin: 1 1 1 1 auto;
+			border: $border;
+			margin-left: auto;
+			margin-right: auto;
 
-			visibility: visible;
-			width: 99%;
-			background-color: $black;
-
+	
 		}
 	}
 	
