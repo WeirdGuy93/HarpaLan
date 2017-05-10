@@ -15,27 +15,44 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
+p {
+  margin: 0 auto;
+  padding: 1px; }
+
 @media screen and (max-width: 960px) {
   .ddMenu {
     color: white;
     position: fixed;
     top: 90px;
-    right: 5px;
+    right: 10px;
     border: 1px solid white;
     width: 24px;
     height: 24px;
     text-align: center; }
 
   .partOfMenu {
-    visibility: hidden; }
+    display: none; }
 
   .ddMenu:hover .onlyThis {
     color: #AAAAAA; }
 
-  .ddMenu:focus .partOfMenu {
-    visibility: visible;
-    width: 99%;
-    background-color: black; }
+  .ddMenu:focus {
+    width: 90%;
+    max-height: 99%;
+    padding: 1px;
+    border: none;
+    visibility: hidden; }
+    .ddMenu:focus .onlyThis {
+      display: none; }
+    .ddMenu:focus .partOfMenu {
+      position: absolute;
+      display: block;
+      width: 80%;
+      background-color: transparent;
+      margin: 1 1 1 1 auto;
+      border: 1px solid white;
+      margin-left: auto;
+      margin-right: auto; }
 
   .partOfMenu:hover {
     background-color: #AAAAAA; } }
