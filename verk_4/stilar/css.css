@@ -15,20 +15,60 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
-p {
-  margin: 0 auto;
-  padding: 1px; }
+.left {
+  display: none; }
 
-@media screen and (max-width: 960px) {
+.right {
+  display: none; }
+
+.bottom {
+  display: block;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  max-width: 502px;
+  max-height: 200px; }
+
+h1 {
+  text-align: center; }
+
+p {
+  margin: 10px auto;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  position: relative; }
+
+.smaLetur {
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 10px;
+  font-size: 12px; }
+
+a {
+  text-decoration: underline;
+  color: #22CC22; }
+
+li a:hover {
+  font: bold 18px times; }
+
+a:visited {
+  color: #FF0000; }
+
+@media screen and (max-width: 490px) {
   .ddMenu {
     color: white;
     position: fixed;
-    top: 90px;
-    right: 10px;
+    top: 7%;
+    right: 2%;
     border: 1px solid white;
     width: 24px;
     height: 24px;
     text-align: center; }
+
+  h1 {
+    margin-top: 15%; }
 
   .partOfMenu {
     display: none; }
@@ -37,25 +77,70 @@ p {
     color: #AAAAAA; }
 
   .ddMenu:focus {
-    width: 90%;
-    max-height: 99%;
-    padding: 1px;
-    border: none;
-    visibility: hidden; }
-    .ddMenu:focus .onlyThis {
-      display: none; }
+    width: 1px;
+    height: 1px;
+    border: 1px solid black;
+    display: none; }
     .ddMenu:focus .partOfMenu {
-      position: absolute;
+      position: relative;
       display: block;
       width: 80%;
       background-color: transparent;
-      margin: 1 1 1 1 auto;
       border: 1px solid white;
-      margin-left: auto;
-      margin-right: auto; }
+      margin-left: auto; }
+    .ddMenu:focus .onlyThis {
+      display: none; }
 
-  .partOfMenu:hover {
-    background-color: #AAAAAA; } }
+  .partOfMenu a:hover {
+    background-color: #22CC22;
+    border: 1px solid #FF0000; }
+
+  .bottom {
+    display: none; } }
+@media screen and (min-width: 490px) {
+  .ddMenu {
+    display: none; }
+
+  .partOfMenu {
+    display: block;
+    height: 30px;
+    text-align: center;
+    background-color: #33AA33;
+    width: 100%;
+    border: 1px solid #FF0000;
+    top: 50%;
+    position: relative;
+    margin-top: 10px; }
+    .partOfMenu p {
+      display: none; }
+    .partOfMenu a {
+      color: black;
+      text-decoration: none;
+      margin: 10px 10%;
+      font: italic bold 20px times,sans-serif;
+      border: 1px solid transparent;
+      width: 34%;
+      position: relative;
+      top: 12%; }
+    .partOfMenu a:hover {
+      text-decoration: underline; } }
+@media screen and (min-width: 960px) {
+  .left {
+    float: left;
+    position: fixed;
+    display: block;
+    top: 20%;
+    left: 0px;
+    width: 220px;
+    margin: 10px; }
+
+  .leftImage {
+    position: absolute;
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%; } }
 @media screen and (max-width: 1080px) {
   body {
     width: 100%;
